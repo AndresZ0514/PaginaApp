@@ -1,0 +1,110 @@
+.parrafo_1
+{
+    background-color: #109648;  
+    color: #F7F0F0;
+    text-align: left;
+    padding: 30px;
+    font-family: 'Montserrat';
+    line-height: 145%;
+    font-size: larger;
+    position: absolute;
+    top: 23%;
+    left: 55%;
+    width: 468px;
+}
+
+.header_font_1
+{
+    font-family: 'Bebas Neue';
+    font-size: 3em;
+    color: #961A11;
+}
+
+.header_font_1_1
+{
+    font-family: 'Bebas Neue';
+    font-size: 3em;
+    color: #961A11;
+    text-align: center;
+}
+
+.header_font_2
+{
+    font-family: 'Bebas Neue';
+    font-size: x-large;
+    color: #961A11;
+}
+
+.header_font_3
+{
+    font-family: 'Montserrat';
+    font-size: 2em;
+    color: #961A11;
+    font-weight: bold;
+}
+
+.subheader
+{
+    font-family: 'Bebas Neue';
+    font-size: x-large;
+    color: #434343;
+    text-align: left;
+    margin: 0 0 0 120px;
+    
+}
+
+.header_1_position
+{
+    text-align: left;
+    margin: 0 0 0 120px;
+}
+
+.header_2_position
+{
+    text-align: left;
+    margin: 0;
+}
+
+.p_asesoria
+{
+    text-align: left;
+    margin-left: 120px;
+    font-family: 'Montserrat';
+    color: #434343;
+}
+
+.home
+{
+    display: flex;
+}
+
+.in-flex
+{
+    flex: 1;
+    flex-wrap: nowrap;
+    padding: 25px;
+}
+
+blockquote
+{
+    padding: 10px 20px;
+    margin: 0 0 0 120px;
+    font-size: 17.5px;
+    border-left: 5px solid #DADADA;
+}
+
+.comentarios1, .comentarios2
+{
+    font-family: 'Neuton';
+    text-align: left;
+}
+
+.comentarios1
+{
+    font-weight: bold;
+}
+
+.comentarios2
+{
+    font-style: italic;
+}

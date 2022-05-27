@@ -1,0 +1,46 @@
+.img1
+{
+    width: 100%;
+    height: auto;
+}
+
+.imagen_circ_div
+{
+    float: left;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen_circ
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 25px;
+}
+
+.div_img
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images1 .images3
+{
+    text-align: left;
+}
+
+.images2
+{
+    text-align: right;
+}
+
+.img_tienda
+{
+    width: 200px;
+    height: 240px;
+    padding: 10px 50px;
+}

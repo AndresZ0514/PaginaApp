@@ -1,0 +1,50 @@
+.button
+{
+    cursor: pointer;
+}
+
+.btn_buscar{
+    background: #961A11 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 15px;
+    height: 30px;
+    margin-left: 5px;
+    padding: 6px 0;
+    width: 30px;
+}
+
+.btn_rrss
+{
+    background: #090C08 none repeat scroll 0;
+    border: medium none;
+    height: 48px;
+    width: 48px;
+}
+
+.btn_parrafo
+{
+    background: #961A11 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 56px;
+    color: #F7F0F0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: large;
+    padding: 2% 5%;
+}
+
+.div_btn
+{
+    text-align: left;
+    padding: 0 0 0 120px;
+}
+
+
+
+.btn_login
+{
+    background: #F7F0F0 none repeat scroll 0;
+    border: medium none;
+    height: 48px;
+    width: 58px;
+}

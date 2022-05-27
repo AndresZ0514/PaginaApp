@@ -1,0 +1,84 @@
+.form1[type=text],
+select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #434343;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #00000000;
+}
+
+.form1[type=password],
+select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #434343;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #00000000;
+}
+
+.form1[type=submit] {
+  width: 80%;
+  background-color: #961A11;
+  color: #F7F0F0;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border-color: #961A11;
+  border-radius: 56px;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.div1 {
+  padding: 0 0 0 120px;
+}
+
+.div2 {
+  padding: 0;
+}
+
+.label1 {
+  text-align: left;
+}
+
+.label_sty
+{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #434343;
+  margin: 10px 0;
+}
+
+.a_sty
+{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #434343;
+  padding-left: 120px;
+}
+
+.form_sty
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.labelbox
+{
+  font-family: 'Montserrat';
+  color: #434343;
+  padding: 10px 0;
+}
+
+.img_form
+{
+  width: 80%;
+  height: 80%;
+  padding: 40px 0;
+}

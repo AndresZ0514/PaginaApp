@@ -1,0 +1,15 @@
+.row
+{
+    display: grid;
+    grid-template-columns: auto-fit(repeat(minmax(1rem,1fr)));
+    gap: 1rem;
+}
+
+
+
+.lista_productos
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
