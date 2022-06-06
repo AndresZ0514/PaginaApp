@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/formularios.css">
     <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/menutienda.css">
+    <script src="js/reloj.js"></script>
     <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
 </head>
 
@@ -43,6 +45,9 @@
                             placeholder="¿Que estas buscando?"></li>
                     <li class="li_nav"><a class="tel" href="tel:+50588888888">+505 8888 8888</a></li>
                     <li class="li_nav"><a class="mail" href="mailto:correo@gmail.com">correo@gmail.com</a></li>
+                    <li class="li_nav">
+                        <span class="tiempo" id="tiempo">00/00/0000 00:00</span>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -74,17 +79,17 @@
                             <li><a class="a_horizontal" href="">Clínica Vacuno, Equino, porcino, ovino</a></li>
                             <li><a class="a_horizontal" href="">Medicina Interna</a></li>
                             <li><a class="a_horizontal" href="">Neonatología</a></li>
-                            <li><a class="a_horizontal" href="">Cirujía</a></li>
+                            <li><a class="a_horizontal" href="">Cirugía</a></li>
                         </ul>
                     </li>
-                    <li><a class="a_nav" href="#">Contacto</a></li>
+                    <li><a class="a_nav" href="/contacto.html">Contacto</a></li>
                     <li><span class="span_btn">
                             <button class="button btn_login">
                                 <img src="Imagenes/cart-2-48.gif" width="40px" height="40px">
                             </button>
                         </span>
                     </li>
-                    <li><a class="a_nav" href="#">Iniciar sesión</a></li>
+                    <li><a class="a_nav" href="login.html">Iniciar sesión</a></li>
                     <li><span class="span_btn">
                             <button class="button btn_login">
                                 <img src="Imagenes/user-4-48.png" width="40px" height="40px">
@@ -96,12 +101,228 @@
         </div>
     </nav>
 
+    <div>
+        <p class="header_font_1 header_tienda_position">Tienda Agrícola</p>
+        <p class="p_tienda">
+            Todo lo que necesites, lo encuentras aquí
+        </p>
+    </div>
+
     <div class="row">
         <div class="panel">
-            hola
+            <nav class="nav">
+                <ul class="list">
+                    <li class="list_item">
+                        <div class="list_button">
+                            <a href="" class="nav_link nav_title">Categorías</a>
+                        </div>
+                    </li>
+                    <li class="list_item list_item_click">
+                        <div class="list_button list_button_click">
+                            <a class="nav_link nav_subtitle" href="">Cuidado Animal</a>
+                            <i class="fa-solid fa-angle-down list_arrow"></i>
+                        </div>
+                        <ul class="list_show">
+                            <li class="list_inside">
+                                <a href="" class="nav_link nav_link_inside">
+                                    Estoy dentro
+                                </a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="" class="nav_link nav_link_inside">
+                                    Estoy dentro
+                                </a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="" class="nav_link nav_link_inside">
+                                    Estoy dentro
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_item list_item_click">
+                        <div class="list_button list_button_click">
+                            <a class="nav_link nav_subtitle" href="">Siembra y Cosecha</a>
+                            <i class="fa-solid fa-angle-down list_arrow"></i>
+                        </div>
+                        <ul class="list_show">
+                            <li class="list_inside">
+                                <a href="" class="nav_link nav_link_inside">
+                                    Abonadoras
+                                </a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="" class="nav_link nav_link_inside">
+                                    Cosechadores
+                                </a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="" class="nav_link nav_link_inside">
+                                    Jardinería
+                                </a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="" class="nav_link nav_link_inside">
+                                    Repuestos
+                                </a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="" class="nav_link nav_link_inside">
+                                    Sembradoras
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <div class="productos">
-            hola
+            <div class="flex_order">
+                <form class="ordenar_por">
+                    <label class="label_title">Ordenar Por: </label>
+                    <select class="ordenarpor select_style" name="ordenarpor" aria-label="Pedido de la Tienda">
+                        <option value="">Orden Predeterminado</option>
+                        <option value="">Por precio: De mayor a menor</option>
+                        <option value="">Por precio: De menor a mayor</option>
+                        <option value="">Por fecha de publicación: ASC</option>
+                        <option value="">Por fecha de publicación: DESC</option>
+                    </select>
+                </form>
+                <form class="view_by">
+                    <label class="label_title">Mostrar: </label>
+                    <select class="viewby select_style" name="view">
+                        <option value="" selected="selected">16</option>
+                        <option value="">32</option>
+                        <option value="">48</option>
+                    </select>
+                </form>
+            </div>
+            <ul class="products_list">
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="producto.html">
+                            <img class="img_tienda" src="imagenes/SEMBRADORA-ROTATIVA-1-.jpg" alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Sembradora Rotativa</a></h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="">
+                            <img class="img_tienda" src="imagenes/image_58fe143b-3a45-477b-96ab-0d1a7ad0f25c_1024x.jpg"
+                                alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Sembradora Abonadora Rotativa</a></h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="">
+                            <img class="img_tienda" src="imagenes/SEMBRADORA-DE-PASTOS-Y-HORTALIZAS-AGROFACIL6.jpg"
+                                alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Sembradora de Pasto y Hortalizas</a></h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="">
+                            <img class="img_tienda" src="imagenes/SEMBRADORA_MANUAL.jpg" alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Sembradora Manual</a></h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="">
+                            <img class="img_tienda" src="imagenes/download.jfif" alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Sembradora Abonadora Manual</a></h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="producto.html">
+                            <img class="img_tienda" src="imagenes/319tTzuMW2L.jpg" alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Sembradora de Hortalizas</a></h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="producto.html">
+                            <img class="img_tienda" src="imagenes/BARRETON-SEMBRADOR-DE-PASTO-8.jpg" alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Sembradora de Pasto Recatón</a></h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="producto.html">
+                            <img class="img_tienda" src="imagenes/ABONADORA-DE-ESPALDA-1.jpg" alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Abonadora de Espaldas</a></h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="producto.html">
+                            <img class="img_tienda" src="imagenes/COMBO-2.jpg" alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Abonadora de Espaldas + Sembradora Manual</a>
+                            </h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="list_items flex_li">
+                        <a href="producto.html">
+                            <img class="img_tienda" src="imagenes/COMBO-1.jpg" alt="">
+                        </a>
+                        <div class="div_item_title">
+                            <h3><a class="title_link" href="producto.html">Abonadora de Espaldas + Sembradora
+                                    Rotativa</a></h3>
+                        </div>
+                        <a class="cart_add" href="">Añadir al Carrito</a>
+                        <a class="buy_now" href="">Comprar Ahora</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -127,6 +348,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/menutienda.js"></script>
 </body>
 
 </html>

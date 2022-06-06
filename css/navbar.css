@@ -116,7 +116,9 @@ li.rrss
     display: flex;
 }
 
-.tel , .mail
+
+
+.tel , .mail, .tiempo
 {
     display: flex;
     color: #F7F0F0;

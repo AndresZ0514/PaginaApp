@@ -1,0 +1,25 @@
+.header_contacto_position
+{
+    margin-left: 145px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.subheader_contacto_position
+{
+    margin-left: 145px;
+    margin-right: 145px;
+    font-family: 'Montserrat';
+}
+
+#map {
+    height: 100%;
+}
+
+.map_container
+{
+    width: 1200px;
+    height: 581px;
+    margin-left: 145px;
+    margin-bottom: 100px;
+}

@@ -2,5 +2,125 @@
 {
     display: grid;
     grid-template-columns: 30% auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+.products_list
+{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.cart_add
+{
+    background-color: #109648;
+    color: #F7F0F0;
+    text-decoration: none;
+    padding: 5% 15%;
+    border-radius: 50px;
+    margin: 3px;
+    font-family: 'Montserrat';
+}
+
+.buy_now
+{   
+    background-color: #F7F0F0;
+    color: #109648;
+    text-decoration: none;
+    padding: 5% 10%;
+    border-radius: 50px;
+    border: 0.5px solid #109648;
+    margin: 5px;
+    font-family: 'Montserrat';
+}
+
+.div_item_title
+{
+    height: 90px;
+}
+
+.list_items
+{
+    width: 202px;
+    padding: 10px;
+}
+
+.flex_li
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.products_list > li:hover
+{
+    box-shadow: 1px 1px 15px 1px lightgray;
+}
+
+.list_items:hover > .cart_add
+{
+    width: 100%;
+    padding: 7% 15%;
+}
+
+.buy_now:hover
+{
+    background-color: #109648;
+    color: #F7F0F0;
+}
+
+.title_link
+{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: #961A11;
+}
+
+.ordenar_por
+{
+    margin-bottom: 10px;
+    margin-right: 430px;
+}
+
+.flex_order
+{
+    display: flex;
+}
+
+.ordenarpor
+{
+    margin: 0 0;
+    padding-left: 8px;
+    padding-right: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 200px;
+    height: 32px;
+}
+
+.label_title
+{
+    font-family: 'Montserrat';
+    color: #434343;
+}
+
+.viewby
+{
+    margin: 0 0;
+    padding-left: 8px;
+    padding-right: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 70px;
+    height: 32px;
+}
+
+.select_style
+{
+    border-color: #961A11;
+    font-family: 'Montserrat';
+}

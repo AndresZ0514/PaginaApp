@@ -1,0 +1,101 @@
+.nav {
+    width: 300px;
+}
+
+.nav_link
+{
+    color: #434343;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav_title
+{
+    font-family: 'Bebas Neue';
+    font-size: larger;
+}
+
+.nav_subtitle
+{
+    font-family: 'montserrat';
+}
+
+.nav_link_inside:hover
+{
+    color: #961A11;
+}
+
+.nav_link_inside
+{
+    padding-left: 20px;
+    text-align: left;
+    font-family: 'Montserrat';
+}
+
+.list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #961A11;
+    padding-left: 0px;
+    margin-left: 40px;
+}
+
+.list_item {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;   
+}
+
+.arrow .list_arrow
+{
+    transform: rotate(180deg);
+
+}
+
+.list_item_click
+{
+    cursor: pointer;
+}
+
+.list_button
+{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.list_show
+{
+    width: 80%;
+    margin-left: auto;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+.list_arrow
+{
+    margin-left: auto;
+    transition: transform .6s;
+}
+
+.header_tienda_position
+{
+    margin: 20px 0 0 40px;
+}
+
+.p_tienda
+{
+    text-align: left;
+    margin-left: 40px;
+    font-family: 'Montserrat';
+    color: #434343;
+    margin-top: 0;
+}
