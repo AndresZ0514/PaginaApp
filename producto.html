@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/formularios.css">
     <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/producto.css">
     <script src="js/reloj.js"></script>
+    <script src="js/cajaitems.js"></script>
     <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
 </head>
 
@@ -45,7 +47,10 @@
                     <li class="li_nav"><a class="tel" href="tel:+50588888888">+505 8888 8888</a></li>
                     <li class="li_nav"><a class="mail" href="mailto:correo@gmail.com">correo@gmail.com</a></li>
                     <li class="li_nav">
-                        <span class="tiempo" id="tiempo">00/00/0000 00:00</span>
+                        <span class="tiempo" id="tiempo"></span>
+                    </li>
+                    <li class="li_nav">
+                        <span class="tiempo" id="fecha"></span>
                     </li>
                 </ul>
             </div>
@@ -81,18 +86,18 @@
                             <li><a class="a_horizontal" href="">Cirugía</a></li>
                         </ul>
                     </li>
-                    <li><a class="a_nav" href="/contacto.html">Contacto</a></li>
+                    <li><a class="a_nav" href="contacto.html">Contacto</a></li>
                     <li><span class="span_btn">
-                            <button class="button btn_login">
+                            <a class="button btn_login" href="cart.html">
                                 <img src="Imagenes/cart-2-48.gif" width="40px" height="40px">
-                            </button>
+                            </a>
                         </span>
                     </li>
                     <li><a class="a_nav" href="login.html">Iniciar sesión</a></li>
                     <li><span class="span_btn">
-                            <button class="button btn_login">
+                            <a class="button btn_login" href="login.html">
                                 <img src="Imagenes/user-4-48.png" width="40px" height="40px">
-                            </button>
+                            </a>
                         </span>
                     </li>
                 </ul>
@@ -100,7 +105,105 @@
         </div>
     </nav>
 
-    
+    <div class="div_producto">
+        <div class="flex_producto flexp1">
+            <img class="img_prod" src="imagenes/SEMBRADORA-ROTATIVA-1-325x325 - Copy.jpg" alt="">
+            <div class="quantity_box">
+                <button onclick="minusclick('quantity')" class="min_max" value="-">-</button>
+                <input type="number" id="quantity" class="quantity" min="1" value="1">
+                <button onclick="plusclick('quantity')" class="min_max" value="+">+</button>
+            </div>
+        </div>
+        <div class="flex_producto flexp2">
+            <h1 class="product_title">Sembradora Rotativa</h1>
+            <h1 class="product_price">$150.00</h1>
+            <ul class="product_info botton_line">
+                <li class="product_info_ite">Equipo de siembra para granos superiores al tamaño de la soya (> 5 mm).
+                </li>
+                <li class="product_info_item">Su cuerpo de material de polímero permite que sea más resistente a caídas
+                    y daños por golpes
+                </li>
+                <li class="product_info_item">
+                    Su mecanismo de apertura y siembra permite trabajar sobre terrenos no labrados (tener presente que
+                    terrenos muy compactados puede afectar la profundidad de siembra).
+                </li>
+                <li class="product_info_item">
+                    Sus rodillos incluidos permiten sembrar una amplia gama de granos entre los que se contemplan: soya,
+                    maíz, fríjol, sandía, algodón, arveja, habichuela, garbanzos, maníes, entre otros.
+                </li>
+            </ul>
+            <div class="button_container">
+                <a class="product_button" href="cart.html">Comprar ahora</a>
+                <a class="product_button" href="">Agregar al carrito</a>
+            </div>
+
+        </div>
+        <div class="flex_producto flexp3">
+            <h1 class="related_items_title">Artículos relacionados</h1>
+            <div class="related_items">
+                <a class="related_item_container" href="producto.html">
+                    <img class="related_items_images"
+                        src="imagenes/image_58fe143b-3a45-477b-96ab-0d1a7ad0f25c_1024x.jpg" alt="">
+                    <h2 class="related_items_subtitle">Sembradora Abonadora Rotativa</h2>
+                </a>
+                <a class="related_item_container" href="producto.html">
+                    <img class="related_items_images" src="imagenes/SEMBRADORA-DE-PASTOS-Y-HORTALIZAS-AGROFACIL6.jpg"
+                        alt="">
+                    <h2 class="related_items_subtitle">Sembradora de Pastos y Hortalizas</h2>
+                </a>
+                <a class="related_item_container" href="producto.html">
+                    <img class="related_items_images"
+                        src="imagenes/image_58fe143b-3a45-477b-96ab-0d1a7ad0f25c_1024x.jpg" alt="">
+                    <h2 class="related_items_subtitle">Sembradora Abonadora Rotativa</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="product_details">
+        <h1 class="related_items_title">Descripción</h1>
+        <ul class="product_info">
+            <li class="product_info_item">Rendimiento aproximado de hasta 3 ha/día.</li>
+            <li class="product_info_item">Construida en TPX® para un manejo más ligero y mejorar los rendimientos de
+                siembra.</li>
+            <li class="product_info_item">Cuenta en su fabricación con aditivos protectores para el sol y los
+                componentes químicos que recubren las semillas, obteniendo un equipo idóneo para trabajo en intemperie.
+            </li>
+            <li class="product_info_item">Por su forma de operación se recomienda para terrenos planos.</li>
+            <li class="product_info_item">Los picos de siembra en acero galvanizado le otorgan alta resistencia y
+                durabilidad, pudiendo trabajar hasta en terrenos duros.
+            </li>
+            <li class="product_info_item">Su profundidad de siembra efectiva es de hasta 5cm, profundidad idónea para
+                una correcta germinación de la mayoría de granos.
+            </li>
+            <li class="product_info_item">El equipo permite calibrar distancias de siembra desde 13.5cm hasta 28cm por
+                medio de separadores, garantizando una siembra altamente homogénea.
+            </li>
+            <li class="product_info_item">Permite realizar calibraciones de semillas por sitio 1 hasta 2.</li>
+            <li class="product_info_item">Su rodillo nivelador garantiza el aplanamiento después de la siembra con el
+                fin compactar el suelo y evitar pérdidas por escorrentía, daños por el Sol o aves.
+            </li>
+            <li class="product_info_item">Capacidad de la tolva hasta 4kg (depende del tipo de semilla).</li>
+            <li class="product_info_item">Se sugiere el uso de semilla certificada para garantizar homogeneidad en el
+                mecanismo de separación de semillas y obtener una siembra pareja.
+            </li>
+            <li class="product_info_item">Tener presente no usar en condiciones de alta humedad (Humedad Operativa
+                Efectiva de hasta el 40%).
+            </li>
+            <li class="product_info_item">Se recomienda lavar el equipo con agua tratada o limpia para retirar
+                excedentes químicos, tierra, y residuos en general que puedan deteriorar los materiales.
+            </li>
+            <li class="product_info_item">Condiciones de almacenamiento: Lavar, dejar secar y aplicar aceite 3 en 1 en
+                los resortes y ejes de movimiento para prolongar la vida útil de los metales.
+            </li>
+            <li class="product_info_item">Condiciones de uso: Lubricar con aceite 3 en 1 en los resortes y ejes de
+                movimiento para evitar la acumulación de polvo en los materiales metálicos y evitar el daño o desgaste
+                acelerado de la pieza.
+            </li>
+            <li class="product_info_item">Mantenimiento y repuestos: Se cuenta con todos los repuesto de piezas,
+                servicio de calibración, lubricación y mantenimiento.
+            </li>
+        </ul>
+    </div>
 
     <footer>
         <div class="grid-footer">

@@ -1,0 +1,17 @@
+.fondo_index
+{
+    margin: 40px 0 40px 0;
+}
+
+.parrafo_2
+{
+    background-color: #109648;  
+    color: #F7F0F0;
+    text-align: left;
+    padding: 2%;
+    font-family: 'Montserrat';
+    line-height: 145%;
+    font-size: 120%;
+    width: 31.61%;
+    position: absolute;
+}

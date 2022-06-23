@@ -1,0 +1,162 @@
+.div_producto
+{
+    display: flex;
+}
+
+.flex_producto
+{
+    flex-wrap: nowrap;
+}
+
+.flexp1 {
+    flex: 40%;
+    margin: 70px 30px 30px 145px;
+
+}
+
+.flexp2 {
+    flex: 40%;
+    margin: 70px 30px 30px 30px;
+}
+
+.flexp3
+{
+    flex: 20%;
+    margin: 70px 30px 30px 30px;
+}
+
+.product_title
+{
+    font-family: 'Montserrat';
+    color: #961A11;
+    font-weight: bold;
+}
+
+.product_price
+{
+    font-family: 'Bebas Neue';
+    color: #434343;
+    font-weight: lighter;
+    margin: 0;
+    width: fit-content;
+    border-top: 1px solid #C4C4C4;
+}
+
+.related_items_title
+{
+    font-family: 'Bebas Neue';
+    color: #434343;
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+.product_info
+{
+    font-family: 'Montserrat';
+    color: #434343;
+    padding-bottom: 30px;
+}
+
+.botton_line
+{
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.product_info_item
+{
+    line-height: 25px;
+}
+
+.related_items
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.related_item_container
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.related_items_subtitle
+{
+    font-family: 'Montserrat';
+    color: #961A11;
+    font-size: small;
+    text-align: center;
+}
+
+.quantity_box
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.min_max
+{
+    width: 30px;
+    height: 48px;
+    font-weight: 700;
+    border-radius: 0;
+    border: 2px solid #434343;
+    padding: 0;
+    background: none;
+    color: #434343;
+}
+
+.min_max:hover
+{
+    color: #961A11;
+}
+
+.quantity[type=number]
+{
+    width: 60px;
+    height: 42px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-width: 2px 0 2px 0;
+    text-align: center;
+    background: none;
+    border-color: #434343;
+}
+
+.quantity[type=number]::-webkit-inner-spin-button,
+.quantity[type=number]::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button_container
+{
+    padding-top: 10px;
+}
+
+.product_button
+{
+    background-color: #109648;
+    color: #F7F0F0;
+    border: 1px solid #F7F0F0;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 2% 10%;
+}
+
+.product_button:hover
+{
+    background-color: #F7F0F0;
+    color: #109648;
+    border: 1px solid #109648;
+}
+
+.product_details
+{
+    margin: 0 145px 0 145px ;
+}

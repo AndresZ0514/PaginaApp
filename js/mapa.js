@@ -13,7 +13,7 @@ function initMap()
       marker = new google.maps.Marker({
           position: myLatLng,
           map,
-          title: "Hola Mundo"
+          title: "Agroservi"
       });
       getPosition();
 }
@@ -22,7 +22,7 @@ function getPosition()
 {
     if(navigator.geolocation)
     {
-        var options = {timeout:60000};
+        var options = {timeout:10000};
         geoLoc = navigator.geolocation;
         watchID = geoLoc.watchPosition(showLocationOnMap, errorHandler, options);
     }
@@ -36,7 +36,6 @@ function showLocationOnMap(position)
 {
     var latitud = position.coords.latitude;
     var longitud = position.coords.longitude;
-    console.log("Latitud : " + latitud + " Longitud : " + longitud);
     const myLatLng = {lat: latitud, lng: longitud };
     marker.setPosition(myLatLng);
     map.setCenter(myLatLng);

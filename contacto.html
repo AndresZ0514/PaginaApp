@@ -21,7 +21,8 @@
     <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
     <script src="js/mapa.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL9vuH36aX1jDPCm3kc3PuS6kb637rvrg&callback=initMap&v=weekly"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL9vuH36aX1jDPCm3kc3PuS6kb637rvrg&callback=initMap&v=weekly"></script>
 </head>
 
 <body>
@@ -49,7 +50,10 @@
                     <li class="li_nav"><a class="tel" href="tel:+50588888888">+505 8888 8888</a></li>
                     <li class="li_nav"><a class="mail" href="mailto:correo@gmail.com">correo@gmail.com</a></li>
                     <li class="li_nav">
-                        <span class="tiempo" id="tiempo">00/00/0000 00:00</span>
+                        <span class="tiempo" id="tiempo"></span>
+                    </li>
+                    <li class="li_nav">
+                        <span class="tiempo" id="fecha"></span>
                     </li>
                 </ul>
             </div>
@@ -85,18 +89,18 @@
                             <li><a class="a_horizontal" href="">Cirugía</a></li>
                         </ul>
                     </li>
-                    <li><a class="a_nav" href="/contacto.html">Contacto</a></li>
+                    <li><a class="a_nav" href="contacto.html">Contacto</a></li>
                     <li><span class="span_btn">
-                            <button class="button btn_login">
+                            <a class="button btn_login" href="cart.html">
                                 <img src="Imagenes/cart-2-48.gif" width="40px" height="40px">
-                            </button>
+                            </a>
                         </span>
                     </li>
                     <li><a class="a_nav" href="login.html">Iniciar sesión</a></li>
                     <li><span class="span_btn">
-                            <button class="button btn_login">
+                            <a class="button btn_login" href="login.html">
                                 <img src="Imagenes/user-4-48.png" width="40px" height="40px">
-                            </button>
+                            </a>
                         </span>
                     </li>
                 </ul>
@@ -115,7 +119,43 @@
         <div id="map"></div>
     </div>
 
+    <div class="formulario_contacto">
+        <div class="flex_contacto flex1">
+            <p class="parrafo_form_contc">Formulario de Contacto Online</p>
+            <div>
+                <form class="contacto_form" action="">
+                    <label class="label_contact" for="">Nombre</label>
+                    <input class="form_contact" type="text" placeholder="Nombre">
 
+                    <label class="label_contact" for="">E-mail</label>
+                    <input class="form_contact" type="text" placeholder="E-mail">
+
+                    <label class="label_contact" for="">Teléfono</label>
+                    <input class="form_contact" type="text" placeholder="Teléfono">
+
+                    <label class="label_contact" l for="">Consulta</label>
+                    <input class="form_consult" type="text">
+
+                    <label class="labelboxcontact" for="politicas"><input type="checkbox" name="politicas">Acepto las
+                        políticas de seguridad</label>
+                    <label class="labelboxcontact" for="news"><input type="checkbox" name="news">Recibir noticias y
+                        novedades</label>
+
+                    <input class="form_contact" type="submit" value="Enviar Consulta">
+                </form>
+            </div>
+
+        </div>
+        <div class="flex_contacto flex2">
+            <p class="parrafo_form_contc">Datos de Contacto</p>
+            <p class="parrafo_contc"><b>AGROSERVI S.A</b><br>
+                Rotonda Centroamérica, Plaza Centroamérica, primer piso módulos B15 y B16 <br><br>
+
+                +505 8888 8888 <br><br>
+
+                correo@gmail.com</p>
+        </div>
+    </div>
 
     <footer>
         <div class="grid-footer">

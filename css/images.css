@@ -44,3 +44,15 @@
     height: 240px;
     border: 1px solid #961A11;
 }
+
+.img_prod
+{
+    width: 100%;
+    border: 1px solid #961A11;
+}
+
+.related_items_images
+{
+    width: 100px;
+    border: 1px solid #961A11;
+}

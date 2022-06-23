@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/formularios.css">
     <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/cart.css">
     <script src="js/reloj.js"></script>
+    <script src="js/cajaitems.js"></script>
+    <script src="js/carrito.js"></script>
     <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
 </head>
 
@@ -45,7 +48,10 @@
                     <li class="li_nav"><a class="tel" href="tel:+50588888888">+505 8888 8888</a></li>
                     <li class="li_nav"><a class="mail" href="mailto:correo@gmail.com">correo@gmail.com</a></li>
                     <li class="li_nav">
-                        <span class="tiempo" id="tiempo">00/00/0000 00:00</span>
+                        <span class="tiempo" id="tiempo"></span>
+                    </li>
+                    <li class="li_nav">
+                        <span class="tiempo" id="fecha"></span>
                     </li>
                 </ul>
             </div>
@@ -81,18 +87,18 @@
                             <li><a class="a_horizontal" href="">Cirugía</a></li>
                         </ul>
                     </li>
-                    <li><a class="a_nav" href="/contacto.html">Contacto</a></li>
+                    <li><a class="a_nav" href="contacto.html">Contacto</a></li>
                     <li><span class="span_btn">
-                            <button class="button btn_login">
+                            <a class="button btn_login" href="cart.html">
                                 <img src="Imagenes/cart-2-48.gif" width="40px" height="40px">
-                            </button>
+                            </a>
                         </span>
                     </li>
                     <li><a class="a_nav" href="login.html">Iniciar sesión</a></li>
                     <li><span class="span_btn">
-                            <button class="button btn_login">
+                            <a class="button btn_login" href="login.html">
                                 <img src="Imagenes/user-4-48.png" width="40px" height="40px">
-                            </button>
+                            </a>
                         </span>
                     </li>
                 </ul>
@@ -100,7 +106,67 @@
         </div>
     </nav>
 
-    
+    <div class="cart_container">
+        <div class="flex_cart list">
+            <p class="header_font_1_1_1">Carrito</p>
+            <div class="cart_list">
+                <ul class="ul_cart">
+                    <li class="flex_li_cart" id="li_1">
+                        <div class="flex_li_cart_1">
+                            <a href="/producto.html">
+                                <img class="img_tienda" src="imagenes/SEMBRADORA-ROTATIVA-1-.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="flex_li_cart_2">
+                            <div class="div_title_flex">
+                                <a class="list_title" href="/producto.html">Sembradora Rotativa</a>
+                                <p class="price_item">$150.00</p>
+                                <i class="fa-solid fa-trash-can color-fa" onclick="eliminar1('li_1')"></i>
+                            </div>
+                            <p class="cart_description">Rendimiento aproximado de hasta 3 ha/día. Construida en TPX®
+                                para un manejo más ligero y mejorar los rendimientos de
+                                siembra. Su profundidad de siembra efectiva es de hasta 5cm, profundidad idónea para
+                                una correcta germinación de la mayoría de granos.
+                            </p>
+                            <div class="quantity_box">
+                                <button onclick="minusclick('quantity1')" class="min_max" value="-">-</button>
+                                <input type="number" id="quantity1" class="quantity" min="1" value="1">
+                                <button onclick="plusclick('quantity1')" class="min_max" value="+">+</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex_li_cart" id="li_2">
+                        <div class="flex_li_cart_1">
+                            <a href="/producto.html">
+                                <img class="img_tienda" src="imagenes/SEMBRADORA-DE-PASTOS-Y-HORTALIZAS-AGROFACIL6.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="flex_li_cart_2">
+                            <div class="div_title_flex">
+                                <a class="list_title" href="/producto.html">Sembradora de Pasto y Hortalizas</a>
+                                <p class="price_item">$150.00</p>
+                                <i class="fa-solid fa-trash-can color-fa" onclick="eliminar1('li_2')"></i>
+                            </div>
+                            <p class="cart_description">Sembradora de alta precisión para semillas pequeñas como
+                                hortalizas, pasturas, gramas ornamentales, sorgo, cereales en general, cucurbitáceas,
+                                entre otros. Su peso la hacen un equipo sumamente versátil para cualquier tipo de
+                                terreno, incluso en laderas y terrenos ondulados.
+                            </p>
+                            <div class="quantity_box">
+                                <button onclick="minusclick('quantity2')" class="min_max" value="-">-</button>
+                                <input type="number" id="quantity2" class="quantity" min="1" value="1">
+                                <button onclick="plusclick('quantity2')" class="min_max" value="+">+</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex_cart details">
+            <h1 class="description_product">Descripción</h1>
+        </div>
+    </div>
 
     <footer>
         <div class="grid-footer">
