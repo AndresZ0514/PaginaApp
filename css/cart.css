@@ -62,6 +62,7 @@
 .ul_cart
 {
     list-style: none;
+    padding: 0;
 }
 
 .div_title_flex
@@ -137,4 +138,43 @@
     color: #C4C4C4;
     background-color: #C4C4C4;
     margin: 0;
+}
+
+.details_flex
+{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    color: #434343;
+}
+
+.total
+{
+    border-top: 0.5px solid #C4C4C4;
+    border-bottom: 0.5px solid #C4C4C4;
+}
+
+.buy_botton
+{
+    width: 100%;
+    background-color: #F7F0F0;
+    color: #109648;
+    text-decoration: none;
+    border: 0.5px solid #109648;
+    font-family: 'Montserrat';
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.buy_botton:hover
+{
+    background-color: #109648;
+    color: #F7F0F0;
+}
+
+.bottons
+{
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
