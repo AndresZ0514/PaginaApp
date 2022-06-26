@@ -35,6 +35,11 @@ select {
   font-weight: bold;
 }
 
+.form1[type=file]
+{
+  display: none;
+}
+
 .div1 {
   padding: 0 0 0 120px;
 }
@@ -53,6 +58,32 @@ select {
   font-weight: bold;
   color: #434343;
   margin: 10px 0;
+}
+
+.label2_sty
+{
+  color: #961A11;
+  height: 30px;
+  width: 50%;
+  background-color: #F7F0F0;
+  border: 0.5px solid #961A11;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.label2_sty:hover
+{
+  color: #F7F0F0;
+  background-color: #961A11;
+  border: 0.5px solid #F7F0F0;
+
+
 }
 
 .a_sty

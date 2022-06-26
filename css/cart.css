@@ -156,7 +156,6 @@
 
 .buy_botton
 {
-    width: 100%;
     background-color: #F7F0F0;
     color: #109648;
     text-decoration: none;
@@ -164,6 +163,7 @@
     font-family: 'Montserrat';
     border-radius: 50px;
     margin: 10px 0;
+    padding: 1% 37%;
 }
 
 .buy_botton:hover
