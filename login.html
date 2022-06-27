@@ -111,18 +111,42 @@
         <div class="in-flex">
             <p class="header_font_3 header_1_position">Iniciar Sesión</p>
             <div class="div1">
-                <form class="form_sty">
-                    <label class="label_sty" for="">E-mail</label>
-                    <input class="form1" type="text" placeholder="Correo">
+                <form action="" class="form_sty" id="formulario1">
 
-                    <label class="label_sty" for="">Contraseña</label>
-                    <input class="form1" type="password" placeholder="Contraseña">
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label class="label_sty" for="correo">E-mail</label>
+                        <div class="formulario__grupo-input">
+                            <input class="form1" type="email" id="correo" name="correo" placeholder="correo@correo.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, números, puntos,
+                            guiones y guión bajo.</p>
+                    </div>
 
-                    <label class="labelbox" for="remember"><input type="checkbox" name="remember"> Recordarme <a
-                            class="a_sty" href="">¿Olvidaste tu contraseña?</a></label>
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label class="label_sty" for="password">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input class="form1" type="password" id="password" name="password" placeholder="Contraseña">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                    </div>
 
+                    <label class="labelbox" for="remember"><input type="checkbox" name="remember">
+                        Recordarme
+                        <a class="a_sty" href="">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+                    </label>
 
-                    <input class="form1" type="submit" value="ACCEDER">
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+
+                    <div class="formulario__grupo-btn-enviar">
+                        <button class="form1" type="submit">Acceder</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito1">¡Bienvenido!</p>
+                    </div>
                 </form>
                 <img class="img_form" src="imagenes/holstein-gd348003c8_1920.jpg" alt="">
             </div>
@@ -130,44 +154,97 @@
         <div class="in-flex">
             <p class="header_font_3 header_2_position">Registrarse</p>
             <div class="div2">
-                <form class="form_sty" enctype="multipart/form-data">
-                    <label class="label_sty" for="">Nombre</label>
-                    <input class="form1" type="text" placeholder="Nombre">
+                <form class="form_sty" enctype="multipart/form-data" id="formulario2">
 
-                    <label class="label_sty" for="">Apellido</label>
-                    <input class="form1" type="text" placeholder="Apellido">
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label class="label_sty" for="nombre">Nombres</label>
+                        <div class="formulario__grupo-input">
+                            <input class="form1" type="text" name="nombre" id="nombre" placeholder="Juan Antonio">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede
+                            contener números, letras y guión bajo.</p>
+                    </div>
 
-                    <label class="label_sty" for="">Teléfono</label>
-                    <input class="form1" type="text" placeholder="Teléfono">
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label class="label_sty" for="apellido">Apellidos</label>
+                        <div class="formulario__grupo-input">
+                            <input class="form1" type="text" name="apellido" id="apellido"
+                                placeholder="Pérez Hernández">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede
+                            contener números, letras y guión bajo.</p>
+                    </div>
 
-                    <label class="label_sty" for="">Email</label>
-                    <input class="form1" type="text" placeholder="Email">
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label class="label_sty" for="telefono">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input class="form1" type="text" name="telefono" id="telefono" placeholder="88318621">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y 8 dígitos.</p>
+                    </div>
 
-                    <label class="label_sty" for="">Contraseña</label>
-                    <input class="form1" type="password" placeholder="Contraseña">
+                    <div class="formulario__grupo" id="grupo__nuevo_correo">
+                        <label class="label_sty" for="nuevo_correo">E-mail</label>
+                        <div class="formulario__grupo-input">
+                            <input class="form1" type="email" id="nuevo_correo" name="nuevo_correo"
+                                placeholder="correo@correo.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, números, puntos,
+                            guiones y guión bajo.</p>
+                    </div>
 
-                    <label class="label_sty" for="">Confirmar contraseña</label>
-                    <input class="form1" type="password" placeholder="Confirmar Contraseña">
+                    <div class="formulario__grupo" id="grupo__new_password">
+                        <label class="label_sty" for="new_password">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input class="form1" type="password" id="new_password" name="new_password"
+                                placeholder="Contraseña">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__new_password2">
+                        <label class="label_sty" for="new_password2">Confirmar Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input class="form1" type="password" id="new_password2" name="new_password2"
+                                placeholder="Confirmar Contraseña">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                    </div>
 
                     <label class="label_sty" for="">Foto de Perfil</label>
 
                     <div class="borde" id="profile_pic">
-                        
+
                     </div>
 
                     <input class="form1" type="file" id="imagen_perfil">
-                    <label class="label2_sty" for="imagen_perfil" onclick="camaraout(); eliminar1('video')" >Subir foto</label>
+                    <label class="label2_sty" for="imagen_perfil" onclick="camaraout(); eliminar1('video')">Subir
+                        foto</label>
                     <label class="label2_sty" onclick="camara(); eliminar1('imagendeperfil')">Tomar foto</label>
 
-                    <label class="labelbox" for="politicas"><input type="checkbox" name="politicas">
+                    <label class="labelbox" for="politicas">
+                        <input type="checkbox" name="politicas" id="politicas">
                         Acepto las políticas de seguridad
                     </label>
-                    <label class="labelbox" for="news"><input type="checkbox" name="news">
+                    <label class="labelbox" for="news">
+                        <input type="checkbox" name="news">
                         Recibir noticias y novedades
                     </label>
 
+                    <div class="formulario__mensaje" id="formulario__mensaje2">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
 
-                    <input class="form1" type="submit" value="REGISTRARSE">
+                    <div class="formulario__grupo-btn-enviar">
+                        <button class="form1" type="submit">Registrarse</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito2">¡Se ha registrado correctamente!</p>
+                    </div>
                 </form>
             </div>
         </div>
@@ -199,6 +276,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/formulario.js"></script>
 </body>
 
 </html>
