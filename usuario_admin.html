@@ -17,12 +17,10 @@
     <link rel="stylesheet" href="css/formularios.css">
     <link rel="stylesheet" href="css/tienda.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/menutienda.css">
+    <link rel="stylesheet" href="css/usuario.css">
     <script src="js/reloj.js"></script>
     <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
-    <script src="js/mapa.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL9vuH36aX1jDPCm3kc3PuS6kb637rvrg&callback=initMap&v=weekly"></script>
 </head>
 
 <body>
@@ -96,7 +94,7 @@
                             </a>
                         </span>
                     </li>
-                    <li><a class="a_nav" href="usuario_inicio.html">Andrés Zeledón</a></li>
+                    <li><a class="a_nav" href="usuario.html">Andrés Zeledón</a></li>
                     <li><span class="span_btn">
                             <a class="button btn_login" href="login.html">
                                 <img src="Imagenes/user-4-48.png" width="40px" height="40px">
@@ -108,64 +106,115 @@
         </div>
     </nav>
 
+    <p class="header_font_1 header_contacto_position">Mi Cuenta</p>
 
-    <p class="header_font_1 header_contacto_position">Contacta con Nosotros</p>
-    <p class="subheader_contacto_position">
-        AgroServi es una empresa dedicada a ofrecer soluciones integrales en el ámbito de la
-        agricultura. Con una clara vocación al servicio, detrás de AgroServi se encuentra un equipo
-        multidisciplinar enfocado a atender y solventar cualquier necesidad relacionada con la actividad de nuestros
-        clientes. <br><br>
-
-        Si eres agricultor y necesitas cualquier tipo de servicio no dudes en contactar con nosotros, no solo
-        atenderemos tus consultas... sino que también solucionaremos tus problemas. Contamos con los mejores
-        profesionales y los mejores productos para asesorarle en cualquier tarea que quiera desarrollar.<br><br>
-
-        En AgroServi, ofrecemos productos y servicios para el campo para que puedas desarrollar tu actividad agrícola.
-    </p>
-    <p class="subheader_contacto_position">Si te ha resultado de interés las posibilidades que puede aportar Agroservi
-        Centro de Servicios Agrícolas S.A. a tu
-        empresa, no dudes en ponerte en contacto con nosotros.
-    </p>
-
-    <div class="map_container">
-        <div id="map"></div>
-    </div>
-
-    <div class="formulario_contacto">
-        <div class="flex_contacto flex1">
-            <p class="parrafo_form_contc">Formulario de Contacto Online</p>
-            <div>
-                <form class="contacto_form" action="">
-                    <label class="label_contact" for="">Nombre</label>
-                    <input class="form_contact" type="text" placeholder="Nombre">
-
-                    <label class="label_contact" for="">E-mail</label>
-                    <input class="form_contact" type="text" placeholder="E-mail">
-
-                    <label class="label_contact" for="">Teléfono</label>
-                    <input class="form_contact" type="text" placeholder="Teléfono">
-
-                    <label class="label_contact" for="">Consulta</label>
-                    <input class="form_consult" type="text">
-
-                    <label class="labelboxcontact" for="politicas"><input type="checkbox" name="politicas">Acepto las
-                        políticas de seguridad</label>
-                    <label class="labelboxcontact" for="news"><input type="checkbox" name="news">Recibir noticias y
-                        novedades</label>
-
-                    <input class="form_contact" type="submit" value="Enviar Consulta">
-                </form>
-            </div>
-
+    <div class="row">
+        <div class="panel">
+            <nav class="nav">
+                <ul class="list">
+                    <li class="list_item">
+                        <div class="list_button_user">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="usuario_inicio.html" class="nav_link nav_subtitle">Inicio</a>
+                        </div>
+                    </li>
+                    <li class="list_item list_item_click">
+                        <div class="list_button_user">
+                            <i class="fa-solid fa-id-card"></i>
+                            <a class="nav_link nav_subtitle" href="usuario_info.html">Información Personal</a>
+                        </div>
+                    </li>
+                    <li class="list_item list_item_click">
+                        <div class="list_button_user">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <a class="nav_link nav_subtitle" href="usuario_admin.html">Gestión de Página</a>
+                        </div>
+                    </li>
+                    <li class="list_item list_item_click">
+                        <div class="list_button_user list_button_click">
+                            <i class="fa-solid fa-lock"></i>
+                            <a class="nav_link nav_subtitle" href="">Seguridad</a>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <div class="list_button_user">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <a href="" class="nav_link nav_subtitle">Información General</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="flex_contacto flex2">
-            <p class="parrafo_form_contc">Datos de Contacto</p>
-            <p class="parrafo_contc"><b>AGROSERVI S.A</b><br>
-                Rotonda Centroamérica, Plaza Centroamérica, primer piso módulos B15 y B16 <br><br>
-
-                +505 8888 8888 <br><br>
-
-                correo@gmail.com</p>
+        <div class="user_inicio_info">
+            <div class="user_centrado">
+                <h1 class="title1_user"><i class="fa-solid fa-screwdriver-wrench"></i> Gestión de Página</h1>
+                <div class="subheader_info">
+                    Apartado único de empleados de Agroservi para editar la página.
+                </div>
+            </div>
+            <div class="container_user">
+                <div class="subcontainer2">
+                    <h2 class="title2_user no_margin">Modo Editor</h2>
+                    <a class="admin_link" href="index_admin.html">¡Vamos!</a>
+                </div>
+                <div class="subcontainer_user">
+                    <p class="items_user">Entrar al modo editor de la página</p>
+                </div>
+            </div>
+            <div class="container_user">
+                <h2 class="title2_user">Configuración de la Tienda</h2>
+                <div class="subcontainer_user" style="margin-bottom: 20px;">
+                    <p class="items_user"> <strong>Lista de productos</strong></p>
+                    <a class="admin_link" href=""><i class="fa-solid fa-plus"></i> Agregar Producto</a>
+                </div>
+                <div class="Q5jTGb" style="margin: 0 20px;"></div>
+                <table class="tabla_productos">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Especificaciones</th>
+                        <th>Características</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Sembradora Rotativa</td>
+                        <td>150.00</td>
+                        <td>Equipo de siembra...</td>
+                        <td>Rendimiento a...</td>
+                        <td><a class="edit_product" href=""><i class="fa-solid fa-pen"></i></a><a class="delete_product"
+                                href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Sembradora Abonadora Rotativa</td>
+                        <td>200.00</td>
+                        <td>Equipo de siembra...</td>
+                        <td>Rendimiento a...</td>
+                        <td><a class="edit_product" href=""><i class="fa-solid fa-pen"></i></a><a class="delete_product"
+                                href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Sembradora de Pastos y Hortalizas</td>
+                        <td>100.00</td>
+                        <td>Sembradora de alta...</td>
+                        <td>Rendimiento a...</td>
+                        <td><a class="edit_product" href=""><i class="fa-solid fa-pen"></i></a><a class="delete_product"
+                                href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Sembradora Manual</td>
+                        <td>50.00</td>
+                        <td>Equipo de siembra...</td>
+                        <td>Rendimiento a...</td>
+                        <td><a class="edit_product" href=""><i class="fa-solid fa-pen"></i></a><a class="delete_product"
+                                href=""><i class="fa-solid fa-trash-can"></i></a></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -191,6 +240,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/menutienda.js"></script>
 </body>
 
 </html>

@@ -12,9 +12,15 @@
     <link rel="stylesheet" href="css/parrafos.css">
     <link rel="stylesheet" href="css/botones.css">
     <link rel="stylesheet" href="fuentes/bebas neue.css">
+    <link rel="stylesheet" href="fuentes/Neuton.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/formularios.css">
+    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/menutienda.css">
+    <link rel="stylesheet" href="css/usuario.css">
     <script src="js/reloj.js"></script>
+    <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -54,7 +60,7 @@
                     <li><a class="a_nav" href="index.html">Inicio</a></li>
                     <li><a class="a_nav" href="asesoria.html">Asesoría Agrícola</a></li>
                     <li>
-                        <a class="a_nav a_nav2" href="#">Productos y Servicios
+                        <a class="a_nav" href="#">Productos y Servicios
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
                         <ul class="c3_horizontal">
@@ -88,7 +94,7 @@
                             </a>
                         </span>
                     </li>
-                    <li><a class="a_nav" href="login.html">Iniciar sesión</a></li>
+                    <li><a class="a_nav" href="usuario.html">Andrés Zeledón</a></li>
                     <li><span class="span_btn">
                             <a class="button btn_login" href="login.html">
                                 <img src="Imagenes/user-4-48.png" width="40px" height="40px">
@@ -99,42 +105,58 @@
             </div>
         </div>
     </nav>
-    <br><br>
-    <img class="img1" src="Imagenes/agricultura2-e1551193452226.jpg" alt="">
-    <div class="parrafo_1">
-        <h1>Al servicio de la agroindustria</h1>
-        <p>
-            AgroServi es una empresa dedicada a ofrecer soluciones integrales en el ámbito de la
-            agricultura y la Ganadería. Con una clara vocación al servicio, nuestra principal preocupación es atender y solventar
-            cualquier necesidad relacionada con la actividad agrícola y ganadera de nuestros clientes.
-        </p>
-        <p>
-            Ponemos a disposición del agrícola los mejores productos, máquinas y herramientas del mercado a los
-            mejores precios. Además, completamos su gama de servicios con la distribución de carburantes a domicilio.
-        </p>
-        <button class="button btn_parrafo" type="button">LEER MÁS</button>
-    </div>
-    <div class="div_img">
-        <div class="imagen_circ_div">
-            <div>
-                <img class="imagen_circ" src="Imagenes/Plant-nutrition.jpg" alt="" width=300 height=auto>
-                <p class="header_font_1_1">Asesoría Agrícola</p>
+
+    <p class="header_font_1 header_contacto_position">Mi Cuenta</p>
+
+    <div class="row">
+        <div class="panel">
+            <nav class="nav">
+                <ul class="list">
+                    <li class="list_item">
+                        <div class="list_button_user">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="usuario_inicio.html" class="nav_link nav_subtitle">Inicio</a>
+                        </div>
+                    </li>
+                    <li class="list_item list_item_click">
+                        <div class="list_button_user">
+                            <i class="fa-solid fa-id-card"></i>
+                            <a class="nav_link nav_subtitle" href="usuario_info.html">Información Personal</a>
+                        </div>
+                    </li>
+                    <li class="list_item list_item_click">
+                        <div class="list_button_user">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <a class="nav_link nav_subtitle" href="usuario_admin.html">Gestión de Página</a>
+                        </div>
+                    </li>
+                    <li class="list_item list_item_click">
+                        <div class="list_button_user list_button_click">
+                            <i class="fa-solid fa-lock"></i>
+                            <a class="nav_link nav_subtitle" href="">Seguridad</a>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <div class="list_button_user">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <a href="" class="nav_link nav_subtitle">Información General</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="user_inicio_info">
+            <div class="user_centrado">
+                <img class="profile_img" src="Imagenes/user.png" alt="">
+                <h1 class="title1_user">Bienvenido, Andrés Zeledón</h1>
+                <div class="subheader_info">
+                    Gestiona tu información, la privacidad y la seguridad para mejorar tu experiencia en Agroservi.
+                </div>
             </div>
         </div>
-        <div class="imagen_circ_div">
-            <img class="imagen_circ" src="Imagenes/31799906-wheat-in-the-hands-harvest-time-agricultural.webp" alt=""
-                width=300 height=auto>
-            <p class="header_font_1_1">Productos y Servicios</p>
-        </div>
-        <div class="imagen_circ_div">
-            <img class="imagen_circ" src="Imagenes/v2.jpg" alt="" width=300 height=auto>
-            <p class="header_font_1_1">Servicios Veterinarios</p>
-        </div>
-        <div class="imagen_circ_div">
-            <img class="imagen_circ" src="Imagenes/gestion-de-purines.jpg" alt="" width=300 height=auto>
-            <p class="header_font_1_1">Gestión de Purines</p>
-        </div>
+
     </div>
+
     <footer>
         <div class="grid-footer">
             <div class="c_footer_1">
@@ -157,6 +179,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/menutienda.js"></script>
 </body>
 
 </html>

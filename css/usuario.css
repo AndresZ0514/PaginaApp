@@ -1,0 +1,124 @@
+.list_button_user {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.user_inicio_info {
+    margin-right: 200px;
+
+}
+
+.user_centrado {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_img {
+    width: 100px;
+    height: 100px;
+}
+
+.title1_user,
+.title2_user {
+    font-family: 'Montserrat', sans-serif;
+    color: #434343;
+    margin: 20px;
+}
+
+.subheader_info {
+    font-family: 'Montserrat';
+    color: #434343;
+}
+
+.container_user {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    border: 1px solid #961A11;
+    border-radius: 5px;
+}
+
+
+
+.subcontainer_user {
+    margin: 0 20px;
+}
+
+.subcontainer2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.subcontainer_horizontal {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    align-items: center;
+}
+
+.Q5jTGb {
+    border-top: 1px solid #dadce0;
+}
+
+.items_user {
+    font-family: 'Montserrat';
+    color: #434343;
+}
+
+.img_item_user {
+    width: 45px;
+    height: 45px;
+}
+
+.admin_link {
+    text-decoration: none;
+    color: #F7F0F0;
+    background-color: #109648;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Montserrat0', sans-serif;
+}
+
+.no_margin {
+    margin: 0;
+}
+
+.tabla_productos {
+    font-family: 'Montserrat', sans-serif;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.tabla_productos td {
+    text-align: center;
+}
+
+.tabla_productos tr {
+    height: 35px;
+}
+
+.tabla_productos tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.edit_product, .delete_product {
+    text-decoration: none;
+    color: #F7F0F0;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.edit_product {
+    background-color: #109648;
+}
+
+.delete_product {
+    background-color: #961A11;
+}
