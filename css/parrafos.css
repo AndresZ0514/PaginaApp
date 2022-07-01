@@ -150,3 +150,22 @@ blockquote
         padding-left: 20px;
     }
 }
+@media screen and (max-width: 450px) {
+    .in-flex img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .in-flex img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .in-flex img {
+        display: none;
+    }
+}

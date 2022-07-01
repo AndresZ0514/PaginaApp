@@ -200,3 +200,9 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 670px) {
+    .div_title_flex {
+        flex-wrap: wrap;
+    }
+}

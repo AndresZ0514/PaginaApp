@@ -208,4 +208,24 @@ select {
   .img_form {
     margin: 0;
   }
+
+  .form1[type=email] {
+    width: 100%;
+  }
+
+  .form1[type=password] {
+    width: 100%;
+  }
+
+  .form1[type=text] {
+    width: 100%;
+  }
+
+  .form1[type=submit] {
+    width: 100%;
+  }
+
+  .formulario__mensaje {
+    align-self: center;
+  }
 }

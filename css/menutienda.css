@@ -99,3 +99,9 @@
     color: #434343;
     margin-top: 0;
 }
+
+@media screen and (max-width: 400px) {
+    .nav {
+        width: 200px;
+    }
+}

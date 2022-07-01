@@ -60,3 +60,10 @@
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 450px) {
+    .img_tienda {
+        width: 130px;
+        height: auto;
+    }
+}

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="fuentes/bebas neue.css">
     <link rel="stylesheet" href="fuentes/Neuton.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sidenavbar.css">
     <link rel="stylesheet" href="css/formularios.css">
     <link rel="stylesheet" href="css/tienda.css">
     <link rel="stylesheet" href="css/menutienda.css">
@@ -110,6 +111,73 @@
             </div>
         </div>
     </div>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image_text">
+                <a class="login_link" href="login.html">
+                    <span class="image">
+                        <img src="imagenes/user-4-48.png" alt="">
+                    </span>
+                    <div class="text header-text">
+                        <span class="name">Iniciar</span>
+                        <span class="profession">Sesion</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <i class="fa-solid fa-bars toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="searxh-box">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <input class="navbar_search" type="search" placeholder="¿Que estas buscando?">
+
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class="fa-solid fa-house icon"></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="asesoria.html">
+                            <i class="fa-solid fa-seedling icon"></i>
+                            <span class="text nav-text">Asesoría Agrícola</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tienda.html">
+                            <i class="fa-solid fa-shop icon"></i>
+                            <span class="text nav-text">Tienda</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-cow icon"></i>
+                            <span class="text nav-text">Servicios Veterinarios</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cart.html">
+                            <i class="fa-solid fa-cart-shopping icon"></i>
+                            <span class="text nav-text">Carrito</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contacto.html">
+                            <i class="fa-solid fa-phone icon"></i>
+                            <span class="text nav-text">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div>
         <p class="header_font_1 header_tienda_position">Tienda Agrícola</p>
@@ -371,6 +439,7 @@
         </div>
     </footer>
     <script src="js/menutienda.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
 
 </html>

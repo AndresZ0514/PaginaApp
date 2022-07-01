@@ -125,7 +125,7 @@
     font-family: 'Montserrat';
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .row {
         display: block;
     }
@@ -137,5 +137,26 @@
     .ordenar_por {
         margin-right: 150px;
         margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ordenar_por {
+        margin: 20px 40px;
+    }
+
+    .view_by {
+        margin: 20px;
+        width: fit-content;
+    }
+
+    .list_items {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .flex_order {
+        display: block;
     }
 }

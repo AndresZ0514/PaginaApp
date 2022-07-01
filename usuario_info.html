@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/tienda.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/menutienda.css">
+    <link rel="stylesheet" href="css/sidenavbar.css">
     <link rel="stylesheet" href="css/usuario.css">
     <script src="js/reloj.js"></script>
     <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
@@ -113,6 +114,73 @@
         </div>
     </div>
 
+    <nav class="sidebar close">
+        <header>
+            <div class="image_text">
+                <a class="login_link" href="login.html">
+                    <span class="image">
+                        <img src="imagenes/user-4-48.png" alt="">
+                    </span>
+                    <div class="text header-text">
+                        <span class="name">Iniciar</span>
+                        <span class="profession">Sesion</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <i class="fa-solid fa-bars toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="searxh-box">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <input class="navbar_search" type="search" placeholder="¿Que estas buscando?">
+
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class="fa-solid fa-house icon"></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="asesoria.html">
+                            <i class="fa-solid fa-seedling icon"></i>
+                            <span class="text nav-text">Asesoría Agrícola</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tienda.html">
+                            <i class="fa-solid fa-shop icon"></i>
+                            <span class="text nav-text">Tienda</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-cow icon"></i>
+                            <span class="text nav-text">Servicios Veterinarios</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cart.html">
+                            <i class="fa-solid fa-cart-shopping icon"></i>
+                            <span class="text nav-text">Carrito</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contacto.html">
+                            <i class="fa-solid fa-phone icon"></i>
+                            <span class="text nav-text">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <p class="header_font_1 header_contacto_position">Mi Cuenta</p>
 
     <div class="row">
@@ -152,7 +220,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="user_inicio_info">
+        <div class="user_inicio_info1">
             <div class="user_centrado">
                 <h1 class="title1_user"><i class="fa-solid fa-id-card"></i> Información Personal</h1>
                 <div class="subheader_info">
@@ -195,7 +263,7 @@
                 <div class="subcontainer_user">
                     <div class="subcontainer_horizontal">
                         <p class="items_user"><strong>Correo Electrónico</strong></p>
-                        <p class="items_user">andresmario2001@hotmail.com</p>
+                        <p class="items_user items_user_correo">andresmario2001@hotmail.com</p>
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                     <div class="Q5jTGb"></div>
@@ -249,6 +317,7 @@
         </div>
     </footer>
     <script src="js/menutienda.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
 
 </html>
