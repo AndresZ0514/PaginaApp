@@ -1,0 +1,17 @@
+.grid-footer
+{
+    background-color: #090C08;
+    width: 100%;
+    margin: 0;
+}
+
+.c_footer_1, .c_footer_2, .c_footer_3
+{
+    color: #F7F0F0;
+}
+
+.ul_footer
+{
+    list-style-type: none;
+}
+

@@ -160,3 +160,17 @@
 {
     margin: 0 145px 0 145px ;
 }
+
+@media screen and (max-width: 1000px) {
+    .flexp3 {
+        display: none;
+    }
+
+    .div_producto {
+        display: block;
+    }
+
+    .flex_producto , .product_details {
+        margin: 20px;
+    } 
+  }

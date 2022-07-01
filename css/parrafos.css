@@ -3,14 +3,12 @@
     background-color: #109648;  
     color: #F7F0F0;
     text-align: left;
+    margin: 30px;
     padding: 30px;
+    border-radius: 10px;
     font-family: 'Montserrat';
     line-height: 145%;
     font-size: larger;
-    position: absolute;
-    top: 23%;
-    left: 55%;
-    width: 468px;
 }
 
 .header_font_1
@@ -84,6 +82,11 @@
 .home
 {
     display: flex;
+    flex-direction: row-reverse;
+}
+
+.home2 {
+    display: flex;
 }
 
 .in-flex
@@ -115,4 +118,35 @@ blockquote
 .comentarios2
 {
     font-style: italic;
+}
+
+@media screen and (max-width: 1000px) {
+    .home, .home2 {
+        display: block;
+    }
+
+    .p_asesoria {
+        margin-left: 20px;
+    }
+    
+    .in-flex blockquote {
+        margin-left: 20px;
+    }
+
+    .in-flex img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header_1_position {
+        margin-left: 20px;
+    }
+
+    .subheader {
+        margin-left: 20px;
+    }
+    
+    .div_btn {
+        padding-left: 20px;
+    }
 }

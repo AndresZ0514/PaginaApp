@@ -1,0 +1,162 @@
+:root {
+    --sidebar-color: #F7F0F0;
+    --text-color: #961A11;
+    --green-color: #109648;
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+
+/* ===== reusable CSS ===== */
+
+.sidebar .text {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.sidebar .imade {
+min-width: 60px;
+display: flex;
+align-items: center;
+
+}
+
+/* ===== sidebar ===== */
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 350px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    z-index: 1;
+}
+
+.sidebar.close {
+    width: 0px;
+    padding: 0;
+}
+
+.sidebar.close .toggle {
+    background: var(--green-color);
+    font-size: 30px;
+}
+
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+.sidebar li .icon, .sidebar li .text {
+    color: var(--text-color);
+}
+
+.sidebar .image_text img {
+    width: 40px;
+}
+
+.sidebar header .image_text {
+    display: flex;
+    align-items: center;
+    
+}
+
+header .image_text .header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name {
+    font-weight: 600;
+}
+
+.header-text .profession {
+    margin-top: -2px;
+
+}
+
+.navbar_search {
+    background: #F7F0F0;
+    border-color: #961A11;
+    border-style: none none solid;
+    font-family: 'montserrat';
+    color: #961A11;
+    font-size: 12px;
+    font-style: italic;
+    height: 25px;
+    width: 250px;
+}
+
+.navbar_search_div {
+    display: flex;
+    align-items: center;
+
+}
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 30px;
+    background: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 20px;
+}
+
+.sidebar .search-box {
+    background: var(--sidebar-color);
+}
+
+.search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: var(--sidebar-color);
+}
+
+.login_link {
+    text-decoration: none;
+}
+
+.sidebar li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        display: initial;
+    }
+}

@@ -124,3 +124,18 @@
     border-color: #961A11;
     font-family: 'Montserrat';
 }
+
+@media screen and (max-width: 1000px) {
+    .row {
+        display: block;
+    }
+
+    .products_list {
+        justify-content: center;
+    }
+
+    .ordenar_por {
+        margin-right: 150px;
+        margin-left: 40px;
+    }
+}

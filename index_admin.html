@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgroServi</title>
     <link rel='stylesheet' href="fuentes/montserrat.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/navbar2.css">
     <link rel="stylesheet" href="css/images.css">
     <link rel="stylesheet" href="css/parrafos.css">
+    <link rel="stylesheet" href="css/sidenavbar.css">
+    <link rel="stylesheet" href="css/videos.css">
     <link rel="stylesheet" href="css/botones.css">
     <link rel="stylesheet" href="fuentes/bebas neue.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -18,39 +20,48 @@
 </head>
 
 <body>
-    <nav>
-        <div class="grid-layout">
-            <div class="c1">
-                <a href="index.html">
-                    <img src="Imagenes/logo.png" alt="Logo">
-                </a>
-            </div>
-            <div>
-                <ul class="c2">
-                    <li class="li_nav rrss"><a class="img_rrss" href=""><img src="imagenes/blog.png" alt=""></a></li>
-                    <li class="li_nav rrss"><a class="img_rrss" href="https://www.instagram.com"><img
-                                src="imagenes/instagram.png" alt=""></a></li>
-                    <li class="li_nav rrss"><a class="img_rrss" href="https://www.facebook.com"><img
-                                src="imagenes/facebook.png" alt=""></a></li>
-                    <li class="li_nav"><span class="span_btn">
+    <div class="grid-layout">
+        <div class="c1">
+            <a href="index.html">
+                <img class="imagen_logo" src="Imagenes/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="c1_1">
+            <div class="c2">
+                <ul class="navbar_ul_black">
+                    <li>
+                        <div class="tiempo" id="fecha"></div>
+                    </li>
+                    <li>
+                        <div class="tiempo" id="tiempo"></div>
+                    </li>
+                    <li><a class="mail" href="mailto:correo@gmail.com">correo@gmail.com</a></li>
+                    <li><a class="tel" href="tel:+50588888888">+505 8888 8888</a></li>
+                    <li class="input"><input class="form-control" type="text" value placeholder="¿Que estas buscando?">
+                    </li>
+                    <li>
+                        <span class="span_btn">
                             <button class="button btn_buscar">
                                 <img src="Imagenes/search-13-16.png" alt="">
                             </button>
-                        </span></li>
-                    <li class="li_nav input"><input class="form-control" type="text" value
-                            placeholder="¿Que estas buscando?"></li>
-                    <li class="li_nav"><a class="tel" href="tel:+50588888888">+505 8888 8888</a></li>
-                    <li class="li_nav"><a class="mail" href="mailto:correo@gmail.com">correo@gmail.com</a></li>
-                    <li class="li_nav">
-                        <span class="tiempo" id="tiempo"></span>
+                        </span>
                     </li>
-                    <li class="li_nav">
-                        <span class="tiempo" id="fecha"></span>
+                    <li class="rrss">
+                        <a class="a_img_rrss" href="https://www.facebook.com">
+                            <img class="img_rrss" src="imagenes/facebook.png" alt="">
+                        </a>
                     </li>
+                    <li class="rrss">
+                        <a class="a_img_rrss" href="https://www.instagram.com">
+                            <img class="img_rrss" src="imagenes/instagram.png" alt="">
+                        </a>
+                    </li>
+                    <li class="rrss"><a class="a_img_rrss" href=""><img class="img_rrss" src="imagenes/blog.png"
+                                alt=""></a></li>
                 </ul>
             </div>
-            <div>
-                <ul class="c3">
+            <div class="c3">
+                <ul class="navbar_ul_white">
                     <li><a class="a_nav" href="index.html">Inicio</a></li>
                     <li><a class="a_nav" href="asesoria.html">Asesoría Agrícola</a></li>
                     <li>
@@ -82,19 +93,94 @@
                         </ul>
                     </li>
                     <li><a class="a_nav" href="contacto.html">Contacto</a></li>
-                    <li><span class="span_btn">
-                            <a class="button btn_login" href="cart.html">
-                                <img src="Imagenes/cart-2-48.gif" width="40px" height="40px">
-                            </a>
-                        </span>
+                    <li class="li_icon">
+                        <a class="a_nav" href="cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
                     </li>
-                    <li><a class="a_nav" href="usuario_info.html"><i class="fa-solid fa-user-gear"></i>&nbspAndrés Zeledón</a></li>
+                    <li><a class="a_nav" href="usuario_inicio.html">Andres Zeledón</a></li>
+                    <li class="li_icon">
+                        <a class="a_nav" href="usuario_inicio.html">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image_text">
+                <a class="login_link" href="login.html">
+                    <span class="image">
+                        <img src="imagenes/user-4-48.png" alt="">
+                    </span>
+                    <div class="text header-text">
+                        <span class="name">Iniciar</span>
+                        <span class="profession">Sesion</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <i class="fa-solid fa-bars toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="searxh-box">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <input class="navbar_search" type="search" placeholder="¿Que estas buscando?">
+
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class="fa-solid fa-house icon"></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="asesoria.html">
+                            <i class="fa-solid fa-seedling icon"></i>
+                            <span class="text nav-text">Asesoría Agrícola</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="tienda.html">
+                            <i class="fa-solid fa-shop icon"></i>
+                            <span class="text nav-text">Tienda</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-cow icon"></i>
+                            <span class="text nav-text">Servicios Veterinarios</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cart.html">
+                            <i class="fa-solid fa-cart-shopping icon"></i>
+                            <span class="text nav-text">Carrito</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contacto.html">
+                            <i class="fa-solid fa-phone icon"></i>
+                            <span class="text nav-text">Contacto</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <br><br>
-    <img class="img1" src="Imagenes/agricultura2-e1551193452226.jpg" alt="">
+
+    <div>
+        <video class="index_video" autoplay loop
+            src="videos/stock-footage-a-farmer-walks-across-a-field-in-rubber-boots-on-a-blurred-background-of-the-tractor-in-motion.webm"></video>
+    </div>
+
     <div class="parrafo_1">
         <h1>Al servicio de la agroindustria</h1>
         <p>
@@ -116,7 +202,7 @@
             </div>
         </div>
         <div class="imagen_circ_div">
-            <img class="imagen_circ" src="Imagenes/31799906-wheat-in-the-hands-harvest-time-agricultural.webp" alt=""
+            <img class="imagen_circ" src="Imagenes/31799906-wheat-in-the-hands-harvest-time-agricultural1.png" alt=""
                 width=300 height=auto>
             <p class="header_font_1_1">Productos y Servicios</p>
         </div>
@@ -134,23 +220,29 @@
             <div class="c_footer_1">
                 <hr>
                 <h1 class="footer_h">Visítanos</h1>
-                <p>Rotonda Centroamérica, Plaza Centroamérica, primer piso módulos B15 y B16 </p>
+                <div class="footer_text">
+                    Rotonda Centroamérica, Plaza Centroamérica, primer piso módulos B15 y B16
+                </div>
             </div>
             <div class="c_footer_2">
                 <h1 class="footer_h">Llámanos</h1>
-                <p>+505 8888 8888</p>
+                <div class="footer_text">
+                    +505 8888 8888
+                </div>
+                
             </div>
             <div class="c_footer_3">
                 <hr>
                 <h1 class="footer_h">Enlaces de interés</h1>
-                <ul class="ul_footer">
-                    <li>Enlace 1</li>
-                    <li>Enlace 2</li>
-                    <li>Enlace 3</li>
+                <ul class="ul_footer footer_text">
+                    <li><a class="footer_link" href="https://www.agricorp.com.ni">Agricorp</a></li>
+                    <li><a class="footer_link" href="http://www.agroalfa.com.ni">Agroalga S.A</a></li>
+                    <li><a class="footer_link" href="http://abrasa.com.ni">Agropecuaria Bravo S.A</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="js/sidebar.js"></script>
 </body>
 
 </html>

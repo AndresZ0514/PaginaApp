@@ -107,3 +107,18 @@
 {
     font-family: 'Montserrat';
 }
+
+@media screen and (max-width: 1000px) {
+    .map_container {
+        width: auto;
+        margin: 25px;
+    }
+    
+    .formulario_contacto {
+        display: block;
+    }
+    
+    .header_contacto_position, .subheader_contacto_position, .formulario_contacto, .flex1, .flex2 {
+        margin: 30px;
+    }
+}
